@@ -1,0 +1,49 @@
+
+header{
+    background-image: url("../assets/img/amigos-abrazados.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    
+    h1{
+        font-family: "Permanent Marker", cursive;
+        font-size: map-get($tamanio-fuente, lglg);
+        color: map-get($colores, color3);
+        position: top left;
+        text-shadow: 5px 5px 15px #abb247;
+        margin: 0px;
+    }
+}
+
+nav{
+    text-align: right;
+    display: inline;
+    align-content: last baseline;
+    padding: 2px;
+    ul{
+        padding-top: 1rem;
+        margin: 0px 0px;
+        li{
+            display: inline;
+            a{
+                font-family: "Permanent Marker", cursive;
+                font-size: map-get($tamanio-fuente, lg);
+                color: map-get($colores, color3);
+                background-color: map-get($colores, color2);
+                padding: 3px;
+                margin: 2px;
+                &:hover{
+                    color: map-get($colores, color2);
+                    background-color: map-get($colores, color3);
+                }
+            }
+        }
+    }
+}
+
+.scroll-sticky {
+    position: sticky;
+    top: 0px;
+}

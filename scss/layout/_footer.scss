@@ -1,0 +1,61 @@
+
+footer{
+    background-color: map-get($colores, color4);
+    display: flex;
+}
+
+section.contact{
+    width: 50%;
+    display: block;
+}
+
+div.contact-rw{
+    display: flex;
+    height: 40px;
+}
+
+div.icon{
+    width: 20%;
+    img{
+        width: 30px;
+        margin: 5px;
+    }
+}
+
+div.dato{
+    width: 80%;
+        h3{
+            font-size: map-get($tamanio-fuente, lglg);
+            font-family: "Iceland", sans-serif;
+            align-content: center;
+        }
+        p{
+            font-size: map-get($tamanio-fuente, lg);
+            font-family: "Iceland", sans-serif;
+    }
+}
+
+section.follow{
+    width:50%;
+    display: block;
+}
+
+div.follow-h3{
+    h3{
+        font-size: map-get($tamanio-fuente, lglg);
+        font-family: "Iceland", sans-serif;
+        text-align: center;
+    }
+}
+
+div.follow-rs{
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+    img{
+        width: 70px;
+        margin: 5px;
+    }
+}
+
+

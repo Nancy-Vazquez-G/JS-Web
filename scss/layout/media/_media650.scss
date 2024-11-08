@@ -1,0 +1,49 @@
+
+@media (max-width: 650px){
+    section.encabezado h1{
+        font-size: map-get($tamanio-fuente, md);
+    }
+
+    .nav ul li a{ 
+        font-size: map-get($tamanio-fuente, smmd);
+    }
+
+    div.container-md{
+        p{
+            font-size: map-get($tamanio-fuente, smsm);
+            margin: 0.65rem;
+        }
+        h2{
+            font-size: map-get($tamanio-fuente, smmd);
+            margin: 0.5rem;
+        }
+    }
+
+    div.contact-rw{
+        height: 25px;
+        .icon img{
+            width: 18px;
+        } 
+    }
+
+    div.dato{
+        h3{
+            font-size: map-get($tamanio-fuente, md);
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: map-get($tamanio-fuente, smmd);
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+    }
+    div.follow-h3 h3{
+        font-size: map-get($tamanio-fuente, smmd);
+    }
+
+    div.follow-rs a img{
+        width: 30px;
+    }
+}
