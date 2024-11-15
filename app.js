@@ -42,16 +42,16 @@ function init() {
 		console.log(cursoSeleccionado);
 
 		if (cursoSeleccionado.hasOwnProperty("id")) {
-			cantidad += 1;
-			carrito.push(cursoSeleccionado);
-
-			validarPromocion = calcularPromocion(cantidad, carrito);
+			//cantidad += 1;
+			//carrito.push(cursoSeleccionado);
+			localStorage.setItem(id, JSON.stringify(cursoSeleccionado));
+			/* validarPromocion = calcularPromocion(cantidad, carrito);
 
 			console.log(JSON.stringify(validarPromocion));
 
 			if (validarPromocion.promocion) {
 				showPromocion = "Tienes promocion \n";
-			}
+			} */
 			
 		} else {
 			alert("El id del curso seleccionado no existe");
@@ -59,6 +59,20 @@ function init() {
 		flag_fin = confirm("¿Deseas adquirir otro curso?");
 		
 	}
+	cantidad = localStorage.length;
+	for (const key in localStorage) {
+		if (Object.prototype.hasOwnProperty.call(localStorage, key)) {
+			const element = localStorage[key];
+			carrito.push(JSON.parse(element));
+		}
+	}
+	validarPromocion = calcularPromocion(cantidad, carrito);
+
+			console.log(JSON.stringify(validarPromocion));
+
+			if (validarPromocion.promocion) {
+				showPromocion = "Tienes promocion \n";
+			}
 
 	alert(showPromocion + "Cantidad de cursos: " + cantidad + "\n" + "Tu total es: $ " + validarPromocion.total);
 	
